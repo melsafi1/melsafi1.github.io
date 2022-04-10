@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/Icon.png" type="image/png" sizes="16x16">
+<video autoplay muted loop id="background-video">
+    <source src="Images/background2.mp4" type="video/mp4">
+    </video>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</br>
+</br>
+</br>
+    <a href="#">About</a>
+</br>
+</br>
+</br>
+<a href="#">Resume</a>
+</br>
+</br>
+</br>
+    <a href="#">Experience</a>
+</br>
+</br>
+</br>
+    <a href="#">Projects</a>
+</br>
+</br>
+</br>
+    <a href="#">Contact</a>
+</br>
+</br>
+</br>
+    <!-- <a href="javascript:void(0);" class="icon" onclick="Mobileview()"> -->
+        <!-- <i class="fa fa-bars"></i> -->
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">
+    
+    <img class="Column" src="Images/left-navigation-toolbar.png" alt="toolbar" width="30" height= "30">
+
+</span>
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P49TFSC');</script>
+    <!-- End Google Tag Manager -->
+        <title>Contact</title>
+    </head>
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P49TFSC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</br>
+</br>
+</br>
+<p class="contactformtext">Send me a message</p>
+<div class="container" align="center">
+  <form action="https://formspree.io/mjvrblrg" method="POST">
+
+    <label for="fname"></label>
+    <input type="text" id="email" name="firstname" placeholder="Your email">
+
+    <label for="comment"></label>
+    <textarea id="comment" name="comment" placeholder="Insert your message here" style="height:200px"></textarea>
+</br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</br>
+</br>
+</br>
+<p class="contactformtext" align="center">Contact me by phone</p>
+</br>
+</br>
+<a class="callnumber" href="tel:604-781-5604">604-781-5604</a>
+</br>
+</br>
+</br>
+</div>
+</body> 
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="images/left-navigation-toolbar1.png" type="image/png" sizes="16x16">
+
+<video autoplay muted loop id="background-video">
+    <source src="Images/background2.mp4" type="video/mp4">
+    </video>
+
+     <a href="javascript:void(0);" class="icon" onclick="Mobileview()"> 
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</br>
+</br>
+</br>
+    <a href="#">About</a>
+</br>
+</br>
+</br>
+<a href="#">Resume</a>
+</br>
+</br>
+</br>
+    <a href="#">Experience</a>
+</br>
+</br>
+</br>
+    <a href="#">Projects</a>
+</br>
+</br>
+</br>
+    <a href="#">Contact</a>
+</br>
+</br>
+</br>
+   
+       
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">
+    
+    <img class="Column" src="Images/left-navigation-toolbar.png" alt="toolbar" width="30" height= "30">
+
+</span>
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P49TFSC');</script>
+    <!-- End Google Tag Manager -->
+
+    <title>Mahmoud Abdelhadi | Personal Portfolio</title>
+  <meta name="description" content="My personal website for showcasing my skills, experience, and projects I'm currently working on!">
+  <meta name="author" content="Mahmoud Abdelhadi">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Engineering, C, C++, Electrical Engineering">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P49TFSC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<h1 align="center">MAHMOUD ABDELHADI </h1>
+<!-- <h2> ABDELHADI </h2> -->
+</br>
+</br>
+
+<h4> Fourth Year Electrical Engineer at the University of British Columbia</h4>
+</br>
+
+<h4> Interested in Software Development, Embedded Systems & Machine Learning</h4>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="row">
+<a href="https://github.com/melsafi1">
+  <img class="Column" src="Images/github-logo.png" alt="Github" width="45" height= "45">
+</a>
+<a href="https://www.linkedin.com/in/mahmoudabdelhadii/">
+  <img class="Column" src="Images/linkedin-logo.png" alt="LinkedIn" width="45" height= "45">
+</a>
+<a href="mailto:mahmoudashraf960@yahoo.com?Subject=Website%20Contact">
+  <img class="Column" src="Images/mail-128.png" alt="Email" width="60" height= "60">
+</a>
+</div>
+</body>
+
+
+
+<footer>
+    <div class="copyright" align="center" style = "color:#f0f0f0">
+        <script>
+          document.write('&copy;' );
+          document.write(' 2022 - ');
+          document.write(new Date().getFullYear());
+          document.write(' www.mahmoudabdelhadi.ca - All Rights Reserved.');
+          document.write('<br/>Last Updated : ');
+          document.write(document.lastModified);
+        </script>
+      </div>
+      
+
+</footer>
+  </div>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+/* Toggle between adding and removing the "responsive" class to sidenav when the user clicks on the icon */
+function Mobileview() {
+  var x = document.getElementById("mySidenav");
+  if (x.className === "sidenav") {
+    x.className += " responsive";
+  } else {
+    x.className = "sidenav";
+  }
+}
+ 
+</script>
+

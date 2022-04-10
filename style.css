@@ -1,0 +1,509 @@
+
+
+
+  @font-face {
+    font-family: SPbold;
+    src: url(Fonts/SFProDisplay/SF-Pro-Display-Bold.otf);
+    /* src: url(Fonts/TS_Block_Bold.ttf); */
+  }
+  
+  @font-face {
+    font-family: SPmedium;
+    src: url(Fonts/SFProDisplay/SF-Pro-Display-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: SPnormal;
+    src: url(Fonts/SFProDisplay/SF-Pro-Display-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: SPthin;
+    src: url(Fonts/SFProDisplay/SF-Pro-Display-Thin.otf);
+  }
+  
+  @font-face {
+    font-family: SPblack;
+    src: url(Fonts/SFProDisplay/SF-Pro-Display-Black.otf);
+  }
+
+  
+  #background-video {
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the top navigation bar */
+.topnav {
+    
+    overflow: clip;
+    background-color: rgb(28, 22, 22);
+  }
+  
+  /* Style the topnav links */
+  .topnav b {
+    float:left;
+    display: inline;
+    position: middle;
+     left: 50%; 
+    /* top:10%; */
+    color: #f2f2f2;
+    font-size: 25px;
+    font-family: SPmedium;
+     padding: 10px 155.5px; 
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav b:hover {
+    background-color: rgb(107, 101, 101);
+    color: black;
+  }
+
+  .topnav .active {
+    color: #83c9ff; 
+
+    background-color: #ddd;
+    color: black;
+  }
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    text-decoration: none !important;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .sidenav .icon {
+    display: none;
+    text-decoration: none !important;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none !important;
+    font-size: 25px;
+    font-family: SPmedium;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f0f0f0;
+    text-decoration: none !important;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    text-decoration: none !important;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    text-decoration: none !important;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .sidenav.responsive {height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        text-decoration: none !important;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */}
+    .sidenav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none !important;
+  }
+  .sidenav.responsive a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none !important;
+    font-family: SPmedium;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav.responsive a:hover {
+    color: #f0f0f0;
+    text-decoration: none !important;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav.responsive .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    text-decoration: none !important;
+    margin-left: 50px;
+  }
+  }
+  
+ 
+  body{
+    margin:0;
+    background-color: #000;
+  }
+  
+  .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Column1 {
+    flex: 50%;
+    padding: 50px;
+    align-items: left;
+    /* justify-content: left; */
+    
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Column {
+    flex: 33.33%;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Project / Experience Page */
+  
+  
+  @media (max-width: 1399px) {
+    .projectimages {
+      float: left;
+      margin-left: 30px;
+    }
+  }
+  
+  @media (min-width: 1399px) {
+    .slideshow-container {
+      float: right;
+      margin-right: 50px;
+    }
+  }
+  
+  @media (max-width: 1399px) {
+    .slideshow-container {
+      float: left;
+      margin-left: 30px;
+    }
+  }
+  
+  @media (min-width: 1399px) {
+    .projectimages {
+      float: right;
+      margin-right: 50px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+  h1 {
+    display: block;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0;
+    font-family: SPblack;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  h2 {
+    display: block;
+    font-size: 10px;
+    margin-top: -20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: TSBLOCK;
+    text-align: center;
+    color: white;
+  }
+  h3 {
+    display: block;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:white;
+    font-family: SPthin;
+    text-align: center;
+  }
+  h4 {
+    display: block;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:white;
+    font-family:  SPthin;
+    text-align: center;
+  }
+  .experiencetitletext {
+    font-size: 25px;
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-right: 0;
+    font-family: SPbold;
+    text-align: left;
+    color: white;
+    display: inline-block;
+    block-size: 10px;
+    }
+  .experiencebodytext {
+        font-size: 10px;
+        padding-left: 30px;
+        padding-right: 0;
+        font-weight: bold;
+        color:white;
+        font-family: SPthin;
+        text-align: left;
+        display: inline-block;
+    }
+    .contactformtext {
+      display: block;
+      font-size: 22.5px;
+      margin-top: -20px;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      font-family: SPbold;
+      text-align: center;
+      color: white;
+      }
+  
+  }
+  
+  @media (min-width: 480px) {
+  h1 {
+    display: block;
+    font-size: 100px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0;
+    font-family: SPblack;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  h2 {
+    display: block;
+    font-size: 75px;
+    margin-top: -20px;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: SPnormal;
+    text-align: center;
+    color: white;
+  }
+  h3 {
+    display: block;
+    font-size: 20px;
+    margin-top: -40px;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:white;
+    font-family:  SPthin;
+    text-align: center;
+  }
+  h4 {
+    display: block;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:white;
+    font-family:  SPthin;
+    text-align: center;
+  }
+  .experiencetitletext {
+    font-size: 50px;
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-right: 0;
+    font-family: TSBLOCK;
+    text-align: left;
+    color: white;
+    display: inline-block;
+    block-size: 10px;
+    }
+  .experiencebodytext {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 0;
+        font-weight: bold;
+        color:white;
+        font-family: SPthin;
+        text-align: left;
+        display: inline-block;
+    }
+    .contactformtext {
+      display: block;
+      font-size: 55px;
+      margin-top: -20px;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      font-family: TSBLOCK;
+      text-align: center;
+      color: white;
+      }
+  }
+  
+  
+  /* Hide the images by default */
+  .mySlides1 {
+    display: none;
+  }
+  .mySlides2 {
+    display: none;
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: 0px;
+    margin-right:50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 51%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #ffffff;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #4d4e4f;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+      padding: 20px;
+  }
+  
+  .callnumber {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-family: SPthin;
+  }
+  
