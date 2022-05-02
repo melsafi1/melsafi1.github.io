@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <link href="style.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="Images/Icon.png" type="image/png" sizes="16x16">
+<link rel="icon" href="images/Icon.png" type="image/png" sizes="16x16">
 <video autoplay muted loop id="background-video">
-    <source src="Images/background2.mp4" type="video/mp4">
+    <source src="images/background2.mp4" type="video/mp4">
     </video>
 
 
@@ -13,23 +13,27 @@
 </br>
 </br>
 </br>
-    <a href="#">About</a>
+<a href="index">Home</a>
 </br>
 </br>
 </br>
-<a href="#">Resume</a>
+<a href="About">About</a>
 </br>
 </br>
 </br>
-    <a href="#">Experience</a>
+<a href="Resume">Resume</a>
 </br>
 </br>
 </br>
-    <a href="#">Projects</a>
+    <a href="experience">Experience</a>
 </br>
 </br>
 </br>
-    <a href="#">Contact</a>
+    <a href="Projects">Projects</a>
+</br>
+</br>
+</br>
+    <a href="Contact">Contact</a>
 </br>
 </br>
 </br>
@@ -47,26 +51,46 @@
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
     <head>
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P49TFSC');</script>
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9XG6NWXXE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K9XG6NWXXE');
+</script>
     <!-- End Google Tag Manager -->
         <title>experience</title>
     </head>
 }. 
    
 
-</br>
-</div>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P49TFSC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
+<div class="container"><img class="projectimages" src="images/TUTFC.png" alt="Tutfc logo" width="400px">
+<p class="experiencetitletext">Tutankhamun Football Club </p>
+
+<p class="experiencebodytext">Internship | Machine Learning Engineer | May 2021 - August 2021 | Fayoum, Egypt</p>
+
+<p class="experiencebodytext">
+Collected in-game data (such as goals, assists, intercept, crosses, passes, ..etc) to Excel </br>
+Spreadsheet & performed data cleaning and feature engineering in Python.I used packages </br>
+such as numPy, pandas, and matplotlib.pyplot for mathematical operations, feature </br>
+engineering, and data analytics. I also used the Scikit-learn packages in Python to run and </br>
+cross-validate ML algorithms consisting of various forms of regression, classification, </br>
+and clustering to predict game outcomes. These models included SVM, KNN, Random Forest and </br>
+Logistic regression, my best model had a 43% Accuracy with 4.5% standard deviation over </br>
+10 games. The 10% increase on the 33% random prediction probability of success aided in </br>
+the progression of the upcoming team</br></p>
+</div>
+</br>
+
+</br>
+</br>
 </body>
+</div>
 <script>
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
     function openNav() {

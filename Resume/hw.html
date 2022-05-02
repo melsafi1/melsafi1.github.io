@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- <link rel="icon" href="Images/Icon.png" type="image/png" sizes="16x16"> -->
+<video autoplay muted loop id="background-video">
+    <source src="images/background2.mp4" type="video/mp4">
+    </video>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</br>
+</br>
+</br>
+<a href="index">Home</a>
+</br>
+</br>
+</br>
+<a href="About">About</a>
+</br>
+</br>
+</br>
+<a href="Resume">Resume</a>
+</br>
+</br>
+</br>
+    <a href="experience">Experience</a>
+</br>
+</br>
+</br>
+    <a href="Projects">Projects</a>
+</br>
+</br>
+</br>
+    <a href="Contact">Contact</a>
+</br>
+</br>
+</br>
+    <!-- <a href="javascript:void(0);" class="icon" onclick="Mobileview()"> -->
+        <!-- <i class="fa fa-bars"></i> -->
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">
+    
+    <img class="Column" src="Images/left-navigation-toolbar.png" alt="toolbar" width="30" height= "30">
+
+</span>
+</br>
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+</br>
+    <head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P49TFSC');</script>
+    <!-- End Google Tag Manager -->
+        <title>Resumes</title>
+        <div class="container" align="center">
+        <div class="topnav" >
+
+            <b href="Resume/hw" class="button">Hardware</b>
+            
+            <b href="Resume/sw" class="button">Software</b>
+            
+            <b href="Resume/ml" class="button">Machine Learning</b>
+        </div>
+          </div>
+    </head>
+   
+    <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P49TFSC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        
+        <div class="container" align="center">
+        <embed src="Resumes/hw.pdf" type="application/pdf" style="height: -webkit-fill-available;width: -webkit-fill-available"/>
+    </div>
+    </body>
+</br>
+</div>
+
+    
+	
+
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+
+    const buttons = document.querySelectorAll('.button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    buttons.forEach(button => button.classList.remove('active'));
+    button.classList.add('active');
+    });
+});
+    
+
+    </script>
